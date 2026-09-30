@@ -1,0 +1,46 @@
+name: Public SDK checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  release:
+    types: [published]
+permissions:
+  contents: read
+jobs:
+  public-contract:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Public files, links, API and C/C++ headers
+        run: python3 .github/check.py --headers
+  release-clients:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'release'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Download exact release and verify its archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          if [ -z "$RELEASE_TAG" ]; then
+            RELEASE_TAG=$(gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq .tag_name)
+          fi
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --pattern 'ISpMV-0.1.0-linux-x86_64-cuda13.tar.gz*' --dir "$RUNNER_TEMP/assets"
+          python3 .github/check.py --extract "$RUNNER_TEMP/assets/ISpMV-0.1.0-linux-x86_64-cuda13.tar.gz" --destination "$RUNNER_TEMP/sdk"
+      - name: Install CUDA runtime development files (no GPU required)
+        run: python3 -m pip install --target "$RUNNER_TEMP/cuda" nvidia-cuda-runtime==13.3.29 nvidia-cuda-crt==13.3.33
+      - name: Check released binary and compile public examples
+        run: |
+          runtime_header=$(find "$RUNNER_TEMP/cuda" -name cuda_runtime_api.h -print -quit)
+          runtime_root=$(dirname "$(dirname "$runtime_header")")
+          python3 .github/check.py --sdk "$RUNNER_TEMP/sdk/ISpMV-0.1.0-linux-x86_64-cuda13" --cuda-runtime "$runtime_root"

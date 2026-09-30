@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.24)
+project(ISpMVBenchmark LANGUAGES CXX)
+if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
+endif()
+find_package(ISpMV 0.1.0 CONFIG REQUIRED COMPONENTS runtime)
+find_package(CUDAToolkit REQUIRED)
+find_package(OpenMP REQUIRED COMPONENTS CXX)
+include(CheckCXXSourceCompiles)
+set(CMAKE_REQUIRED_INCLUDES "${CUDAToolkit_INCLUDE_DIRS}")
+check_cxx_source_compiles("#define CUSPARSE_ENABLE_EXPERIMENTAL_API
+#include <cusparse.h>
+int main() { cusparseSpMVOpPlan_t plan = nullptr; (void)plan; }"
+    ISPMV_HAS_SPMVOP_API)
+unset(CMAKE_REQUIRED_INCLUDES)
+if(NOT ISPMV_HAS_SPMVOP_API)
+    message(FATAL_ERROR "The four-method benchmark requires CUDA headers with the experimental cuSPARSE SpMVOp API")
+endif()
+add_executable(ispmv_benchmark benchmark.cpp)
+target_compile_features(ispmv_benchmark PRIVATE cxx_std_17)
+target_link_libraries(ispmv_benchmark PRIVATE ISpMV::runtime CUDA::cudart CUDA::cusparse OpenMP::OpenMP_CXX)

@@ -1,0 +1,64 @@
+ISpMV Binary License 1.0
+Effective date: September 21, 2026
+Copyright (c) 2026 Qilin LAI. All rights reserved.
+
+1. Scope
+
+This license governs the ISpMV compiled core library (libispmv.so and its
+versioned files) supplied with this license (the "Binary"). The licensor is
+Qilin LAI. Public interfaces, examples, documentation and other materials
+identified in LICENSE are governed by their stated licenses, not this license.
+
+2. Permission to use
+
+Subject to these terms, you receive a non-exclusive, worldwide, royalty-free,
+non-transferable license to download, install and execute the Binary for your
+own internal evaluation and non-commercial research. Commercial or production
+use requires prior written permission from the licensor. You may make copies
+needed for installation and backup on systems you control, including your cloud
+instances. Your authorized users may use it
+on your behalf under these terms. Retain this license and all notices with copies.
+Your own applications may link to the public interfaces under their MIT terms.
+
+3. Restrictions
+
+Without prior written permission from the licensor, you may not:
+(a) distribute, publish, sublicense, sell, rent or otherwise provide the Binary
+    to third parties, either alone or bundled with another product;
+(b) modify the Binary or create derivative versions of it;
+(c) reverse engineer, decompile or disassemble the Binary, except to the extent
+    applicable law permits; or
+(d) remove or alter copyright, license or attribution notices.
+
+These restrictions do not limit permissions required by applicable law or
+independently granted by a third-party component's license. Distributing your
+own application without the Binary is not prohibited by this license; recipients
+can obtain their own licensed copy of ISpMV from its official release page.
+
+4. Ownership and separate permissions
+
+The Binary is licensed, not sold. No ownership, source-code access, trademark
+rights or rights beyond those expressly stated are granted. Core implementation
+source remains private. Contact the licensor through the official repository
+at https://github.com/PolyU-IOR/ISpMV for redistribution or other permissions.
+A separate written agreement may grant additional rights.
+
+5. Third-party licenses
+
+Third-party components retain their own license terms and notices in licenses/.
+NVIDIA runtime libraries are installed and licensed separately.
+
+6. Termination
+
+This permission ends if you breach these terms. On termination, stop using the
+Binary and delete the copies held under this license. Terms concerning ownership,
+third-party rights, warranty and liability continue to apply.
+
+7. Warranty and liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE BINARY IS PROVIDED "AS IS", WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. THE LICENSOR IS NOT LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE BINARY OR ITS USE,
+WHETHER IN CONTRACT, TORT OR OTHERWISE. NO SUPPORT, UPDATE OR COMPATIBILITY
+COMMITMENT IS INCLUDED. NOTHING EXCLUDES LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED.

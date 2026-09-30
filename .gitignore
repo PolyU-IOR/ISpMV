@@ -1,0 +1,12 @@
+/build*/
+/example-build/
+/benchmark-build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/lib/libispmv.so*
+*.tar.gz
+*.mtx
+__pycache__/
+/benchmarks/results.csv
+/benchmarks/preprocessing.csv

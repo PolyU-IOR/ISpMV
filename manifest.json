@@ -1,0 +1,102 @@
+{
+  "version": "0.1.0",
+  "source_commit": "7b41845dfa213edd1995cecc66172a53441991b9",
+  "package_commit": "fad7670c07e0028d11fa4fdf359a4316676711ba",
+  "library_sha256": "f5e3cb0d851b549df917ca07dab6d95a22f25534bc25f0f174c2ec0afb634fe3",
+  "build_library_sha256": "265a2f282745046619b6d50965a3da0d3a8095f017a1f60b98ccf40d0f701b7f",
+  "audit": {
+    "abi": 1,
+    "exports": [
+      "ispmv_apply",
+      "ispmv_apply_host",
+      "ispmv_apply_with_values",
+      "ispmv_config_init",
+      "ispmv_csr_init",
+      "ispmv_device_create",
+      "ispmv_device_query",
+      "ispmv_device_release",
+      "ispmv_error_message",
+      "ispmv_prepare",
+      "ispmv_query",
+      "ispmv_release",
+      "ispmv_status_message",
+      "ispmv_version"
+    ],
+    "architectures": [
+      "sm_100",
+      "sm_120",
+      "sm_80",
+      "sm_86",
+      "sm_89",
+      "sm_90"
+    ],
+    "dependencies": [
+      "libcudart.so.13",
+      "libcublas.so.13",
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux-x86-64.so.2"
+    ],
+    "required_symbol_versions": {
+      "GLIBC": "2.34",
+      "GLIBCXX": "3.4.29",
+      "CXXABI": "1.3.9"
+    },
+    "ptx_included": false,
+    "private_symbols_included": false
+  },
+  "qualification": {
+    "status": "accepted",
+    "runtime_qualified": true,
+    "library_sha256": "f5e3cb0d851b549df917ca07dab6d95a22f25534bc25f0f174c2ec0afb634fe3",
+    "scope": "Targeted single-matrix API, hardware and numerical qualification",
+    "hardware": "NVIDIA H100 PCIe, 114 SM, compute capability 9.0",
+    "runtime_architectures": [
+      "sm_90"
+    ],
+    "cpu_contract_tests": 12,
+    "numerical_checks": 324,
+    "caller_graphs": 324,
+    "graph_replays": 648,
+    "memcheck_suites": 2,
+    "memcheck_errors": 0,
+    "public_examples": [
+      "C host",
+      "C++ host",
+      "C++ device"
+    ],
+    "property_queries": {
+      "initialization": 1,
+      "two_preparations": 0
+    },
+    "limitations": [
+      "Runtime qualification covers H100 PCIe and the listed checks and fixtures.",
+      "A100, H200, B200, RTX 4090 and RTX 5090 have compiled targets and CPU identity/resource coverage; runtime qualification is limited to sm_90.",
+      "Cold plan latency varies between independent processes. No general speedup is claimed.",
+      "Unknown board labels report unknown; numeric resource adaptation still applies."
+    ],
+    "measurement_protocol": {
+      "directions": 3,
+      "scalar_modes": [
+        [
+          1,
+          0
+        ],
+        [
+          1.25,
+          -0.375
+        ]
+      ],
+      "warmup": 100,
+      "groups": 3,
+      "calls_per_group": 50,
+      "fixtures": [
+        "qap15 A",
+        "L2CTA3D AT",
+        "neos-3025225_lp AT"
+      ]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+CCCL 3.3.3 toolkit notices
+
+*  Copyright 2021 NVIDIA Corporation
+* (C) Copyright David Abrahams 2002.
+* (C) Copyright David Abrahams 2003.
+* (C) Copyright Jeremy Siek    2002.
+* (C) Copyright Jeremy Siek 2002.
+* (C) Copyright John Maddock 2000.
+* (C) Copyright Roland Richter 2003.
+* (C) Copyright Thomas Witt    2002.
+* (C) Copyright Toon Knapen    2001.
+* Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+* Copyright (C) 1999, 2000 Jaakko Järvi (jaakko.jarvi@cs.utu.fi)
+* Copyright (c) 2005 Bruce D. Evans and Steven G. Kargl
+* Copyright (c) 2007 David Schultz <das@FreeBSD.ORG>
+* Copyright (c) 2011 David Schultz
+* Copyright (c) 2011 David Schultz <das@FreeBSD.ORG>
+* Copyright (c) 2012 Stephen Montgomery-Smith <stephen@FreeBSD.ORG>
+* Copyright David Abrahams 2003.
+* Copyright David Abrahams and Thomas Becker 2000-2006.
+* Copyright Jens Maurer 2000-2001
+* Copyright Jens Maurer 2002
+* SPDX-FileCopyrightText: Copyright (c) 2020-2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+* SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+Copyright (2022) National Technology & Engineering
+Copyright (c) 2001-2002 Joel de Guzman
+Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) Facebook, Inc. and its affiliates.
+SPDX-FileCopyrightText: Copyright (c) 2001-2015, Housemarque Oy (housemarque.com)
+SPDX-FileCopyrightText: Copyright (c) 2002, Peter Dimov and Multi Media Ltd (`THRUST_CURRENT_FUNCTION`)
+SPDX-FileCopyrightText: Copyright (c) 2007-2015, Hartmut Kaiser
+SPDX-FileCopyrightText: Copyright (c) 2008-20120, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2013, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2013, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2008-2013, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2016, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2018, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2018, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2019, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2008-2020, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2021, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2008-2021, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2022, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2024, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2008-2024, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2008-2025, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011, Duane Merrill. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2016, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2018, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2020, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2021, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2022, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2023, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2024, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2025, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2011-2026, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2013, Filipe RNC Maia
+SPDX-FileCopyrightText: Copyright (c) 2013-2018, Eric Niebler (`THRUST_RETURNS`, etc)
+SPDX-FileCopyrightText: Copyright (c) 2014-2018, Bryce Adelstein Lelbach
+SPDX-FileCopyrightText: Copyright (c) 2016, NVIDIA CORPORATION. All rights meserved.
+SPDX-FileCopyrightText: Copyright (c) 2016, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2016-2018, Casey Carter (`THRUST_RETURNS`, etc)
+SPDX-FileCopyrightText: Copyright (c) 2017-2018, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2018, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2018, NVIDIA Corporation
+SPDX-FileCopyrightText: Copyright (c) 2018, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2018-2019, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2018-2020, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2018-2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2019, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2020, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2021, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2021-2022, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2022 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2022, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2023 Microsoft Corporation.
+SPDX-FileCopyrightText: Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES
+SPDX-FileCopyrightText: Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES;.
+SPDX-FileCopyrightText: Copyright (c) 2023, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2023-2024, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2023-24 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2023-25 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES
+SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2024, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2024, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2024-25 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES
+SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPO__RATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA CORPORATION. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA CORPORATION. All rights reserved. SPDX-License-Identifier:
+SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA Corporation. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) 2025, NVIDIA, Corporation
+SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES.
+SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+SPDX-FileCopyrightText: Copyright (c) Microsoft Corporation.
+SPDX-FileCopyrightText: Copyright (c), NVIDIA CORPORATION. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+SPDX-License-Identifier: BSD-3
+SPDX-License-Identifier: BSD-3-Clause
+SPDX-License-Identifier: BSL-1.0
